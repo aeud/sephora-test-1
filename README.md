@@ -18,20 +18,20 @@ Also precise if a specific setup is required to make your code run.
 
 ## Data structure
 
-- Write a clean binary tree structure (from scratch, no external library!) in your favorite language.
-- Populate it with few samples.
+1. Write a clean binary tree structure (from scratch, no external library!) in your favorite language.
+2. Populate it with few samples.
 
-Now, imagine this tree is a depedance tree. Each node is a task* (a function/procedure) which has to be ran, but not before all it's children's tasks are all executed and done.
+*Now, imagine this tree is a depedance tree. Each node is a task (a function/procedure) which has to be ran, but not before all it's children's tasks are all executed and done.*
 
-- How would you search this tree to run the tasks in a correct order?
-- Apply on your structure, and test it
+3. How would you search this tree to run the tasks in a correct order?
+4. Apply on your structure, and test it
 
-Going further, we would like to parallelize the execution of few of these tasks: tasks from different nodes can work simultaneously, but, still, must not be executed before it's children's tasks are done.
+*Going further, we would like to parallelize the execution of few of these tasks: tasks from different nodes can work simultaneously, but, still, must not be executed before it's children's tasks are done.*
 
-- If you had to parallelize these tasks' executions, how would you do that?
-- Apply on your tree structure, and test it
+5. If you had to parallelize these tasks' executions, how would you do that?
+6. Apply on your tree structure, and test it
 
-*Sample of task function:
+*Sample of task function (in js):
 
 ```js
 function task (callback){
